@@ -1,0 +1,38 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+     <div class="col-12">
+      <table class="table table-bordered table-striped table-hover">
+         <thead class="table-dark">
+           <tr>
+               <th>SRNO.</th>
+               <th>NAME</th>
+               <th>EMAIL</th>
+               <th>STREET</th>
+               <th>SUITE</th>
+               <th>CITY</th>
+               <th>ZIPCODE</th>
+               <th>GEO (Lat)</th>
+               <th>GEO(Lng)</th>
+               <th>PHONE</th>
+               <th>WEBSITE</th>
+           </tr>  
+         </thead>
+         <tbody>
+            <tr *ngFor="let user of userarray,let i=index">
+               <td>{{i+1}}</td>
+               <td>{{user.name}}</td>
+               <td>{{user.email}}</td>
+               <td>{{user.address.street}}</td>
+               <td>{{user.address.suite}}</td>
+               <td>{{user.address.city}}</td>
+               <td>{{user.address.zipcode}}</td>
+               <td>{{user.address.geo.lat}}</td>
+               <td>{{user.address.geo.lng}}</td>
+               <td>{{user.phone}}</td>
+               <td>{{user.website}}</td>
+            </tr>
+         </tbody>
+      </table>
+     </div>
+    </div>
+   </div>

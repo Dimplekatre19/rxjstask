@@ -1,0 +1,22 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+     <div class="col-12">
+      <table class="table table-bordered table-striped table-hover">
+         <thead class="table-dark">
+           <tr>
+               <th>SRNO.</th>
+               <th>NAME</th>
+               <th>EMAIL</th>
+           </tr>  
+         </thead>
+         <tbody>
+            <tr *ngFor="let comment of commentarray,let i=index">
+               <td>{{i+1}}</td>
+               <td>{{comment.name}}</td>
+               <td>{{comment.email}}</td>
+            </tr>
+         </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
